@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.sample2Controller">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+   <children>
+      <AnchorPane layoutX="60.0" layoutY="66.0">
+         <children>
+             <TableView fx:id="table" editable="true" maxHeight="1080.0" maxWidth="1920.0" minHeight="664.0" minWidth="1834.0" prefHeight="958.0" prefWidth="1834.0">
+               <columns>
+                   <TableColumn fx:id="idclm" prefWidth="75.0" text="id" />
+                   <TableColumn fx:id="nameclm" prefWidth="205.0" text="Name" />
+                   <TableColumn fx:id="designationclm" prefWidth="240.0" text="designation" />
+                  <TableColumn fx:id="deptclm" prefWidth="186.0" text="department" />
+                  <TableColumn fx:id="amountclm" prefWidth="194.0" text="amount" />
+                  <TableColumn fx:id="dateclm" minWidth="0.0" prefWidth="147.0" text="Date" />
+                  <TableColumn fx:id="primaryclm" prefWidth="184.0" text="Instalment(primary)" />
+                  <TableColumn fx:id="rateclm" prefWidth="203.0" text="Interest Rate" />
+                  <TableColumn fx:id="interestclm" prefWidth="230.0" text="Instalment(interest)" />
+                  <TableColumn fx:id="givenclm" prefWidth="148.0" text="No of Instalments Given" />
+               </columns>
+                 <padding>
+                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                 </padding>
+             </TableView>
+         </children>
+      </AnchorPane>
+       <Button fx:id="button1" layoutX="50.0" layoutY="14.0" mnemonicParsing="false" onAction="#Handle" prefHeight="37.0" prefWidth="130.0" text="Add New" textAlignment="CENTER">
+           <padding>
+             <Insets bottom="10.0" top="20.0" />
+           </padding>
+       </Button>
+   </children>
+</AnchorPane>
